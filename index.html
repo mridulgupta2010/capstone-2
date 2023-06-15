@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project2</title>
+    <link href="stylesheets/hamburgers.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<style>
+    .font {
+        font-family: 'Nanum Myeongjo', serif;
+        letter-spacing: 2px;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    
+    .one {
+        background: linear-gradient(-45deg, lightseagreen, lightgreen, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 400px;
+        width: 100vw;
+    }
+
+    @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+    .two {
+        background-color: #DDE6ED;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        height: 50vh;
+    }
+    .header1 {
+        height: 100px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header2 {
+        
+        height: 300px;
+        max-width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .portrait {
+        height: 300px;
+    }
+
+    
+
+
+
+    .name {
+        font-family: 'Caveat', cursive;
+        font-size: 40px;
+    }
+
+    .name-font {
+        font-size: 50px;
+        margin-top: 30px;
+    }
+
+
+    .navbar1 {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        width: 500px;
+        font-size: 30PX;
+        background-color: black;
+        border-radius: 20px;
+      
+    }
+    
+    .nav-link {
+        text-align: center;
+        border-radius: 10px;
+        text-decoration: none;
+        
+    }
+    nav {
+        display: hide;
+    }
+
+    .nav-link:hover{
+        background-color: hsla(0, 0%,98%, 0.2)
+    }
+
+    .header2 h1 {
+        text-align: center;
+        font-size: 100px;
+    }
+
+    .navbar-nav {
+        width: 700px;
+        gap: 30px;
+    }
+
+    @media (min-width:551px) and (max-width:992px) {
+        .portrait {
+        height: 200px;
+    }
+    .header2 {
+        height: 200px;
+    }
+    .header1 {
+        justify-content: start;
+    }
+    .one {
+        height: 300px;
+    }
+    .navbar1 a{
+        display: none;
+    }
+    .navbar1 {
+        display: none;
+    }
+    .header2 h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+}
+
+@media (max-width:550px) {
+    .header2 h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .portrait {
+        height: 200px;
+    }
+    .header2 {
+        height: 200px;
+    }
+    .header1 {
+        justify-content: start;
+    }
+    .one {
+        height: 300px;
+    }
+    .navbar1 a{
+        display: none;
+    }
+    .navbar1 {
+        display: none;
+    }
+    
+}
+
+</style>
+<body>
+    
+    <div class="main">
+        <div class="one">
+            <div class="header1">
+            
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid ">
+                      
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mridul Gupta</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 name d-flex justify-content-center">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Projects</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+        
+            </div>
+            <div class="header2 name">
+                <h1>designer</h1>
+                <img class="portrait" src="./Images/wepik-export-20230615004326BFQ5.png" alt="">
+                <h1>&lt;coder&gt;</h1>
+            </div>
+        </div>
+        
+        
+        <div class="two">
+            <strong class="name name-font">I am Mridul</strong>
+            <h2 class="font"> a <u>pro</u>grammer</h2>
+            <p style="font-size: 30px;text-align: center;padding: 20px;">I am a <strong>Web Developer</strong> who is always ready to blend <strong>Code</strong>, <strong>Algorithms</strong> and <strong>Pixels</strong> . Let's start scrolling to learn more about me.</p>
+        </div>  
+    </div>
+    
+
+    
+</body>
+</html>
